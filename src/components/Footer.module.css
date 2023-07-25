@@ -1,0 +1,9 @@
+.container{
+    background-color: #3e3e3e;
+    height: 4rem;
+}
+
+.container p {
+    color: #ffffff;
+    line-height: 4rem;
+}
