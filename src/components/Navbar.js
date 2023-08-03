@@ -1,11 +1,13 @@
-import React from "react";
+import React, { Component } from 'react';
 import styles from "./Navbar.module.css";
 import logo from "../images/logo-ROG.png"
 
 
-const Navbar = () => {
-  return (
-    <header className={styles.header}>
+
+class Navbar extends Component {
+  render() {
+    return (
+      <header className={styles.header}>
       <div className={styles.listContainer}>
         <ul className={styles.list}>
           <li>Home Page</li>
@@ -19,7 +21,8 @@ const Navbar = () => {
 
       </div>
     </header>
-  );
-};
+    );
+  }
+}
 
 export default Navbar;

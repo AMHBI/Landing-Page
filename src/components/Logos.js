@@ -1,13 +1,14 @@
-import React from 'react';
+import React , {Component} from 'react';
 import styles from "./Logos.module.css"
 import acer from "../images/logo-Acer.png";
 import apple from "../images/logo-Apple.png";
 import intel from "../images/logo-Intel.png";
 import nvidida from "../images/logo-Nvidia.png";
 
-const Logos = () => {
-    return (
-        <div className={styles.container}>
+class Logos extends Component {
+    render() {
+        return (
+            <div className={styles.container}>
             <h3>Who support us ?</h3>
             
             <div>
@@ -17,7 +18,8 @@ const Logos = () => {
             <img src={nvidida} alt='Logosss'/>
             </div>
         </div>
-    );
-};
+        );
+    }
+}
 
 export default Logos;
