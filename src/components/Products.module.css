@@ -4,3 +4,4 @@
     flex-wrap: wrap;
     min-height: 100vh;
 }
+@media screen and (min-width : 992px) {}

@@ -2,13 +2,13 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  width: 25%;
+  width: 35%;
   height: auto;
-  margin: 2rem;
-  padding: 1em;
+  margin: 0.75rem;
+  padding: 0.75em;
   background-color: #edf2f4;
   border-radius: 10px;
-  box-shadow: 0 0 20px -2px #2b2d42;
+  box-shadow: 0 0 10px -2px #2b2d42;
   text-align: left;
 }
 .container img {
@@ -20,24 +20,25 @@
 }
 .container h3 {
   color: #d90429;
-  font-size: 1.5em;
+  font-size: 1em;
   margin-bottom: 0;
+  overflow: scroll;
 }
 
 .container p {
-  color: #ef233c;
-  font-size: 1.5em;
+  color: #000000;
+  font-size: 0.75em;
 }
 .container button {
   width: auto;
-  height: 5vh;
+  height: 3vh;
   cursor: pointer;
   outline: none;
   border: 0;
   background-color: #2b2d42;
   color: #ffffff;
   font-weight: 500;
-  font-size: larger;
+  font-size: 0.75rem;
   border-radius: 5px;
 }
 
@@ -53,18 +54,96 @@
   border-top: 2px solid silver;
 }
 .counter img {
-  width: 1.2em;
+  width: 1em;
   background-color: #9197ae;
   padding: 0.4em;
 }
 .counter span {
   background-color: #273043;
-  padding: 2px 2em;
+  padding: 2px 1em;
   border-radius: 5px;
   color: #ffffff;
   font-weight: bolder;
-  font-size: large;
+  font-size: 0.8rem;
 }
 .deactived {
     opacity: 0.2 ;
+}
+
+
+@media screen and (min-width : 768px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 25%;
+    height: auto;
+    margin: 2rem;
+    padding: 1em;
+    background-color: #edf2f4;
+    border-radius: 10px;
+    box-shadow: 0 0 20px -2px #2b2d42;
+    text-align: left;
+  }
+  .container img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  .container h3 {
+    color: #d90429;
+    font-size: 1.5em;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+  
+  .container p {
+    color: #ef233c;
+    font-size: 1.5em;
+  }
+  .container button {
+    width: auto;
+    height: 5vh;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    background-color: #2b2d42;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: larger;
+    border-radius: 5px;
+  }
+  
+  .container button:hover {
+    background-color: #616279;
+    color: #ffffff;
+  }
+  .counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2em 0em;
+    border-top: 2px solid silver;
+  }
+  .counter img {
+    width: 1.2em;
+    background-color: #9197ae;
+    padding: 0.4em;
+  }
+  .counter span {
+    background-color: #273043;
+    padding: 2px 2em;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: large;
+  }
+  .deactived {
+      opacity: 0.2 ;
+  }
+  
+  
+  
 }
