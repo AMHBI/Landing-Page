@@ -12,9 +12,6 @@
   cursor: pointer;
 }
 
-.listContainer {
-}
-
 .list {
   display: flex;
   list-style: none;
@@ -28,4 +25,11 @@
 
 .list li:hover {
   color: #000000;
+}
+.list a {
+  text-decoration: none;
+  color: #fff;
+}
+.list a:hover {
+  color: #ff0000;
 }

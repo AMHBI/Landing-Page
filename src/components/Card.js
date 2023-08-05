@@ -29,7 +29,7 @@ class Card extends Component {
     const counter = this.state.counter;
     return (
       <div className={styles.container}>
-        <img src={image} />
+        <img src={image} alt="product"/>
         <h3>{name}</h3>
         <p>{price} $ {this.state.counter ? ` × ${counter} = ${counter * Number(price)}` : ""}</p>
         <div className={styles.counter}>

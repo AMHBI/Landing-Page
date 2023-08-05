@@ -1,9 +1,10 @@
 .container {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  width: 100%;
+  width: 25%;
   height: auto;
-  margin: 10rem 2rem;
+  margin: 2rem;
   padding: 1em;
   background-color: #edf2f4;
   border-radius: 10px;
@@ -13,6 +14,8 @@
 .container img {
   width: 100%;
   height: auto;
+  aspect-ratio: 16/9;
+  object-fit: contain;
   border-radius: 10px;
 }
 .container h3 {
